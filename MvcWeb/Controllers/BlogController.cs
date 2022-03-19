@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace MvcWeb.Controllers
 {
     public class BlogController : Controller
     {
+        BlogManager blogManager = new BlogManager();
         public ActionResult Index()
         {
             return View();
@@ -20,7 +22,8 @@ namespace MvcWeb.Controllers
         [ChildActionOnly]
         public PartialViewResult BlogList()
         {
-            return PartialView();
+            var blogList = blogManager.getAll();
+            return PartialView(blogList);
         }
         [ChildActionOnly]
         public PartialViewResult NewBlogs() 
