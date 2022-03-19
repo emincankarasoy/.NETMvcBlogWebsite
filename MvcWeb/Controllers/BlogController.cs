@@ -32,5 +32,22 @@ namespace MvcWeb.Controllers
         {
             return PartialView();
         }
+        
+        public ActionResult BlogDetails()
+        {
+            return View();
+        }
+        [ChildActionOnly]
+        public PartialViewResult BlogCover() 
+        {
+            return PartialView();
+        }
+        [ChildActionOnly]
+        public PartialViewResult BlogDetailsContent()
+        {
+            return PartialView();
+        }
+
+            
     }
 }
