@@ -32,10 +32,5 @@ namespace MvcWeb.Controllers
         {
             return PartialView();
         }
-        [ChildActionOnly]
-        public PartialViewResult Footer()
-        {
-            return PartialView();
-        }
     }
 }
