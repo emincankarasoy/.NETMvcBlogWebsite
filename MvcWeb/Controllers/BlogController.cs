@@ -47,6 +47,10 @@ namespace MvcWeb.Controllers
         {
             return PartialView();
         }
+        public ActionResult BlogByCategory()
+        {
+            return View();
+        }
 
             
     }

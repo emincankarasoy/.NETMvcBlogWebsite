@@ -13,5 +13,15 @@ namespace MvcWeb.Controllers
         {
             return View();
         }
+        [ChildActionOnly]
+        public PartialViewResult CommentList()
+        {
+            return PartialView();
+        }
+        [ChildActionOnly]
+        public PartialViewResult LeaveComment() 
+        {
+            return PartialView();
+        }
     }
 }

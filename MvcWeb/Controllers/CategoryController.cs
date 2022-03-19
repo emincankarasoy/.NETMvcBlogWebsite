@@ -15,5 +15,10 @@ namespace MvcWeb.Controllers
             var categoryvalues = categoryManager.GetAll();
             return View(categoryvalues);
         }
+        [ChildActionOnly]
+        public PartialViewResult BlogDetailsCategoryList()
+        {
+            return PartialView();
+        }
     }
 }

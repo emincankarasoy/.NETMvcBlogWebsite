@@ -6,19 +6,20 @@ using System.Web.Mvc;
 
 namespace MvcWeb.Controllers
 {
-    public class AboutController : Controller
+    public class AuthorController : Controller
     {
+        // GET: Author
         public ActionResult Index()
         {
             return View();
         }
         [ChildActionOnly]
-        public PartialViewResult Footer()
+        public PartialViewResult AuthorAbout()
         {
             return PartialView();
         }
         [ChildActionOnly]
-        public PartialViewResult MeetTheTeam()
+        public PartialViewResult AuthorPopularPost()
         {
             return PartialView();
         }
