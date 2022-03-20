@@ -12,9 +12,13 @@ namespace BusinessLayer.Concrete
     {
         private Repository<Blog> repositoryBlog = new Repository<Blog>();
 
-        public List<Blog> getAll()
+        public List<Blog> GetAll()
         {
             return repositoryBlog.List();
+        }
+        public List<Blog> GetBlogByID(int id)
+        {
+            return repositoryBlog.List(x => x.BlogID == id);
         }
     }
 }

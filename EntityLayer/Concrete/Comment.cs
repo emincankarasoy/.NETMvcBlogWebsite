@@ -17,8 +17,9 @@ namespace EntityLayer.Concrete
         public string UserName { get; set; }
         [StringLength(50)]
         public string UserMail { get; set; }
-        [StringLength(200)]
+        [StringLength(500)]
         public string CommentText { get; set; }
+        public DateTime CommentDateTime { get; set; }
         public int BlogID { get; set; }
         public virtual Blog Blog { get; set; }
     }

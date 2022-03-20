@@ -19,11 +19,11 @@ namespace MvcWeb.Controllers
         [ChildActionOnly]
         public PartialViewResult FeaturedBlogs()
         {
-            var postFirst = blogManager.getAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 2);
-            var postSecond = blogManager.getAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 3);
-            var postThird = blogManager.getAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 4);
-            var postFourth = blogManager.getAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 1);
-            var postFifth = blogManager.getAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 5);
+            var postFirst = blogManager.GetAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 2);
+            var postSecond = blogManager.GetAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 3);
+            var postThird = blogManager.GetAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 4);
+            var postFourth = blogManager.GetAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 1);
+            var postFifth = blogManager.GetAll().OrderByDescending(x => x.BlogID).Where(x => x.CategoryID == 5);
 
             ViewBag.postTitleFirst = postFirst.Select(x => x.BlogTitle).FirstOrDefault();
             ViewBag.postImageFirst = postFirst.Select(x => x.BlogImage).FirstOrDefault();
@@ -51,7 +51,7 @@ namespace MvcWeb.Controllers
         [ChildActionOnly]
         public PartialViewResult BlogList(int page = 1)
         {
-            var blogList = blogManager.getAll().ToPagedList(page,6);
+            var blogList = blogManager.GetAll().ToPagedList(page,6);
             return PartialView(blogList);
         }
         [ChildActionOnly]
@@ -61,23 +61,24 @@ namespace MvcWeb.Controllers
         }
         public ActionResult BlogDetails()
         {
+
             return View();
         }
         [ChildActionOnly]
-        public PartialViewResult BlogCover() 
+        public PartialViewResult BlogCover(int id) 
         {
-            return PartialView();
+            var blogDetailsContent = blogManager.GetBlogByID(id);
+            return PartialView(blogDetailsContent);
         }
         [ChildActionOnly]
-        public PartialViewResult BlogDetailsContent()
+        public PartialViewResult BlogDetailsContent(int id)
         {
-            return PartialView();
+            var blogDetailsContent = blogManager.GetBlogByID(id);
+            return PartialView(blogDetailsContent);
         }
         public ActionResult BlogByCategory()
         {
             return View();
-        }
-
-            
+        }    
     }
 }

@@ -13,3 +13,6 @@ C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.csp
 C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.commentDate.resources
+C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
+C:\Users\eminc\source\repos\MvcWeb\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.updateCommentTextLength.resources
