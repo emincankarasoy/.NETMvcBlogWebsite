@@ -61,6 +61,26 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repository.cs" />
+    <Compile Include="Migrations\202203191930311_migrationOne.cs" />
+    <Compile Include="Migrations\202203191930311_migrationOne.designer.cs">
+      <DependentUpon>202203191930311_migrationOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203192055146_migrationTwo.cs" />
+    <Compile Include="Migrations\202203192055146_migrationTwo.designer.cs">
+      <DependentUpon>202203192055146_migrationTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203192118231_migrationThree.cs" />
+    <Compile Include="Migrations\202203192118231_migrationThree.designer.cs">
+      <DependentUpon>202203192118231_migrationThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203192119336_migrationThree1.cs" />
+    <Compile Include="Migrations\202203192119336_migrationThree1.designer.cs">
+      <DependentUpon>202203192119336_migrationThree1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203200734484_migrationD.cs" />
+    <Compile Include="Migrations\202203200734484_migrationD.designer.cs">
+      <DependentUpon>202203200734484_migrationD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -68,7 +88,23 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202203191930311_migrationOne.resx">
+      <DependentUpon>202203191930311_migrationOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203192055146_migrationTwo.resx">
+      <DependentUpon>202203192055146_migrationTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203192118231_migrationThree.resx">
+      <DependentUpon>202203192118231_migrationThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203192119336_migrationThree1.resx">
+      <DependentUpon>202203192119336_migrationThree1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203200734484_migrationD.resx">
+      <DependentUpon>202203200734484_migrationD.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
       <Project>{0dcf6008-859d-4558-8394-a23aee1f47e1}</Project>

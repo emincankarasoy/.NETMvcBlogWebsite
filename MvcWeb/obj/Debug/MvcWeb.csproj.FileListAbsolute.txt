@@ -89,3 +89,7 @@ C:\Users\eminc\source\repos\MvcWeb\MvcWeb\obj\Debug\MvcWeb.csproj.CoreCompileInp
 C:\Users\eminc\source\repos\MvcWeb\MvcWeb\obj\Debug\MvcWeb.csproj.CopyComplete
 C:\Users\eminc\source\repos\MvcWeb\MvcWeb\obj\Debug\MvcWeb.dll
 C:\Users\eminc\source\repos\MvcWeb\MvcWeb\obj\Debug\MvcWeb.pdb
+C:\Users\eminc\source\repos\MvcWeb\MvcWeb\bin\PagedList.dll
+C:\Users\eminc\source\repos\MvcWeb\MvcWeb\bin\PagedList.xml
+C:\Users\eminc\source\repos\MvcWeb\MvcWeb\bin\PagedList.Mvc.dll
+C:\Users\eminc\source\repos\MvcWeb\MvcWeb\bin\PagedList.Mvc.xml

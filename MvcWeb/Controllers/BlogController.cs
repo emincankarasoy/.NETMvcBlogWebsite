@@ -1,4 +1,6 @@
 ﻿using BusinessLayer.Concrete;
+using PagedList;
+using PagedList.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,9 +49,9 @@ namespace MvcWeb.Controllers
             return PartialView();
         }
         [ChildActionOnly]
-        public PartialViewResult BlogList()
+        public PartialViewResult BlogList(int page = 1)
         {
-            var blogList = blogManager.getAll();
+            var blogList = blogManager.getAll().ToPagedList(page,6);
             return PartialView(blogList);
         }
         [ChildActionOnly]
@@ -57,12 +59,6 @@ namespace MvcWeb.Controllers
         {
             return PartialView();
         }
-        [ChildActionOnly]
-        public PartialViewResult MailSubscribe() 
-        {
-            return PartialView();
-        }
-        
         public ActionResult BlogDetails()
         {
             return View();

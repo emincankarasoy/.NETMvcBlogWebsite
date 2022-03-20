@@ -1,8 +1,12 @@
-﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+﻿@using PagedList
+@using PagedList.Mvc
+
+@model IEnumerable<EntityLayer.Concrete.Blog>
+
+
 @{ 
     String color = "bg-secondary mb-3";
 }
-
 
 <div class="site-section">
     <div class="container">
@@ -66,3 +70,5 @@
         </div>
     </div>
 </div>
+
+@Html.PagedListPager((IPagedList)Model,page => Url.Action("Index",new { page }))

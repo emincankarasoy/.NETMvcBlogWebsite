@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLayer.Concrete;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,7 @@ namespace MvcWeb.Controllers
 {
     public class AboutController : Controller
     {
+        private AboutManager aboutManager = new AboutManager();
         public ActionResult Index()
         {
             return View();
@@ -15,7 +17,8 @@ namespace MvcWeb.Controllers
         [ChildActionOnly]
         public PartialViewResult Footer()
         {
-            return PartialView();
+            var abouts = aboutManager.GetAll();
+            return PartialView(abouts);
         }
         [ChildActionOnly]
         public PartialViewResult MeetTheTeam()
