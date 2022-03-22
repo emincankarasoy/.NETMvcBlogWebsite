@@ -10,3 +10,15 @@ C:\Users\eminc\source\repos\MvcWeb\EntityLayer\obj\Debug\EntityLayer.csproj.Core
 C:\Users\eminc\source\repos\MvcWeb\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
 C:\Users\eminc\source\repos\MvcWeb\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\eminc\source\repos\MvcWeb\EntityLayer\obj\Debug\EntityLayer.pdb
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityFramework.dll
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityFramework.xml
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\obj\Debug\EntityLayer.csproj.CopyComplete
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\Emin\Source\Repos\.NETMvcBlogWebsite\EntityLayer\obj\Debug\EntityLayer.pdb
